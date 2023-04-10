@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(120deg,#96bedf,#031a57);
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  border-color: whitesmoke;
+}
+
+.input__container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+.keyboard__container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+.keyboard__row {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input{
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 4rem;
+  margin-left: 50pt;
+  margin-right: 10pt;
+  border-radius: 10px;
+}
+
+form button {
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(43, 43, 121);;
+  background-color: #96bedf;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: auto;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  border-radius: 10px;
+}
+
+.start__button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(43, 43, 121);;
+  background-color: #96bedf;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: auto;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  border-radius: 10px;
+}
+
+.submit__button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(43, 43, 121);;
+  background-color: #96bedf;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: auto;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+label {
+  color: rgb(43, 43, 121);
+  font-size: 2rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.warning {
+  color: rgb(245, 35, 35);
+  font-size: 2rem;
+  width: 2rem;
+  margin-right: 30pt;
+}
+
+button:hover {
+  background-color: rgb(43, 43, 121);;
+  color: whitesmoke;
+}
+
+.counter{
+  color: rgb(43, 43, 121);
+  background-color: whitesmoke;
+  padding: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 3rem;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  border-radius: 10px;
+}
+
+.timer{
+  color: whitesmoke;
+  /* background-color: whitesmoke; */
+  width: 5rem;
+  padding: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  /* width: 200px; */
+  margin-left: 20pt;
+  margin-right: 20pt;
+  border-radius: 10px;
+}
+
+.prompt__container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  size: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.prompt__container div{
+  display: flex;
+  align-items: center;
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
+
+.todo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo__div {
+  margin: 0.5rem;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.todo__div li {
+  flex: 1;
+}
+
+.todo__togglebtn, .todo__deletebtn {
+  background-color:#ff6f47;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.todo__togglebtn {
+  background-color: rgb(73,204,73);
+}
+
+.todo_item {
+  padding:0 0.5rem;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.todo__div--completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo__div--fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.todo__select {
+  margin: 1em;
+  position: relative;
+  overflow: hidden;
+}
+.todo__select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: white;
+  color:#ff6f47;
+  top: 0;
+  right: -1px;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.todo__select:hover::after {
+  background-color: #ff6f47;
+  color: white;
+}
+
+
